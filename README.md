@@ -1,16 +1,10 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built this as part of a frontend assignment. The task was to make a scroll-driven hero section inspired by a car scroll animation reference. I did the same concept but used a rocket instead.
+Basically as you scroll down the rocket takes off — flame grows, smoke comes out, background goes dark like you're in space. Everything is synced to your scroll position so if you scroll slowly the rocket moves slowly, scroll fast and it shoots up. Felt like a better fit for the ITZFIZZ brand than just moving a car around.
+Tech I used — React, Vite, GSAP for the animations and ScrollTrigger for the scroll stuff, and canvas for the stars and smoke particles since CSS can't really do that well.
+To run it
+bashnpm install
+npm install gsap
+npm run dev
+To deploy
+bashnpm run deploy
+Just make sure the base in vite.config.js matches your repo name or the page will be blank on GitHub Pages
